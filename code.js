@@ -87,15 +87,13 @@ drawPlatforms();
 updatePlatforms(); 
 } 
 
- 
-
 function drawBackground(){ 
-    painter.fillStyle = "#AAAAAA"; 
+    painter.fillStyle = "#000000"; 
     painter.fillRect(0, 0, 400, 400); 
 } 
 
 function drawSquare(x, y){ 
-    painter.fillStyle = "#FF0000"; 
+    painter.fillStyle = "#FFFF00"; 
     if (x < 0 && x > -20){ 
         painter.fillRect(0, y, 20+x, 20);//left 
         painter.fillRect(400+x, y, -x, 20);//right 
@@ -108,7 +106,7 @@ function drawSquare(x, y){
 } 
 
 function drawPlatforms(){ 
-    painter.fillStyle = "#17202A"; 
+    painter.fillStyle = "#FFFFFF"; 
         for (var i = 0; i < platforms.length; ++i){ 
         var platform = platforms[i]; 
         //drawing platforms 
@@ -117,7 +115,7 @@ function drawPlatforms(){
 } 
 
 function drawDoor(){ 
-    painter.fillStyle = "#EB49D0" 
+    painter.fillStyle = "#FF0000" 
     painter.fillRect(320, 60, 20, 40); 
 } 
 
